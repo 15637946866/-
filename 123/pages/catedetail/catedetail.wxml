@@ -1,0 +1,10 @@
+<view class="grafather">
+<view wx:for="{{product}}" class="father">
+<image src="{{item.productPicList[0]}}"></image>
+<text>{{item.productName}}</text>
+<view class="son">
+  <view class="borther1">现价:{{item.price}}</view>
+   <view class="borther2">原价：{{item.originalPrice}}</view>
+</view>
+</view>
+</view>
