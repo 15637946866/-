@@ -56,8 +56,13 @@
 			"list": [
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
+=======
+					"name": "pages/indetail/indetail",
+					"pathName": "pages/indetail/indetail",
+>>>>>>> abf245cafbb209d68e25bf46b7410cff47fd86a7
 					"scene": null
 				}
 			]

@@ -1,1 +1,133 @@
 /* pages/my/my.wxss */
+@import "iconfont.wxss";
+
+.mine {
+  height: 400rpx;
+  background: rgb(253, 53, 107);
+  width: 100%;
+  padding-top: 130rpx;
+}
+
+.mine-header {
+  width: 60%;
+  height: 300rpx;
+  margin: 0 auto;
+}
+
+.aimg {
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.atext{
+  display: block;
+  color: white;
+ margin-top: 40rpx;
+ text-align: center;
+}
+
+.center {
+  width: 80%;
+  height: 180rpx;
+  margin: 0 auto;
+  background: white;
+  margin-top: -90rpx;
+  border-style: solid;
+  box-shadow: 0px 2px 4px 2px gainsboro;
+  border-width: 0rpx;
+}
+
+.ali {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.icon-icon2-copy {
+  font-size: 60rpx;
+  position: absolute;
+  left: 55rpx;
+  top: 46rpx;
+}
+
+.icon-wodeyouhuijuan {
+  font-size: 60rpx;
+  position: absolute;
+  left: 75rpx;
+  top: 46rpx;
+}
+
+.icon-wodeyuyue {
+  font-size: 60rpx;
+  position: absolute;
+  left: 64rpx;
+  top: 46rpx;
+}
+
+bottom {
+  display: block;
+  font-size: 26rpx;
+  color: gray;
+  position: absolute;
+  left: 40rpx;
+  top: 130rpx;
+}
+
+.foot {
+  width: 80%;
+  height: 360rpx;
+  margin: 0 auto;
+  background: white;
+  margin-top: 60rpx;
+  border-style: solid;
+  box-shadow: 0px 2px 4px 2px gainsboro;
+  border-width: 0rpx;
+}
+
+.bli {
+  width: 100%;
+  height: 88rpx;
+  border-bottom: solid 2rpx gainsboro;
+}
+
+.cli {
+  width: 100%;
+  height: 90rpx;
+}
+
+.icon-shoucang {
+  font-size: 40rpx;
+  line-height: 88rpx;
+  margin-left: 40rpx;
+}
+
+.icon-r {
+  font-size: 40rpx;
+  line-height: 88rpx;
+  margin-left: 40rpx;
+  color: gray;
+}
+
+.icon-liuyan {
+  font-size: 40rpx;
+  line-height: 88rpx;
+  margin-left: 40rpx;
+  color: gray;
+}
+
+.icon-guanyu {
+  font-size: 40rpx;
+  line-height: 88rpx;
+  margin-left: 40rpx;
+  color: gray;
+}
+
+.ming {
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  line-height: 88rpx;
+  color: gray;
+}

@@ -1,4 +1,55 @@
 <!--index.wxml-->
-<view >
- 111
+<view class="home">
+  <view class="header">
+    <view class="addr">
+   {{address}}
+    </view>
+    <view class="search">
+      <image src="../../static/images/search.png"></image>
+      <input placeholder="搜索商品"></input>
+    </view>
+  </view>
+   <!-- 轮播图 -->
+  <swiper class="sw" indicator-dots="true" autoplay="true" circular="true">
+      <swiper-item wx:for="{{bannerList}}" wx:key="{{index}}" class="sw-item">
+          <image src="{{item.adPic}}"></image>
+      </swiper-item>
+  </swiper>
+   <!-- 分类 -->
+  <view class="cate">
+    <view class="cate-item" wx:for="{{cate}}" wx:key="{{index}}">
+      <image src="{{item.categoryIcon}}"></image>
+      <text>{{item.itemName}}</text>
+    </view>
+  </view>
+  <!-- 广告 -->
+  <view class="gk">
+    <image src="{{focusPic}}"></image>
+  </view>
+    <!-- hot -->
+    <view class="shop">
+        <image src="../../static/images/火.png"></image>
+        <text>热销商品</text>
+    </view>
+  <view class="hot">
+    <view class="hot-item" wx:for="{{hot}}" bindtap="goto" data-id="{{item.productId}}" wx:key="{{index}}">
+      <image src="{{item.productPicList[0]}}"></image>
+      <text class="zt">{{item.productName}}</text>
+       <text class="pre">￥{{item.price}}</text>
+    </view>
+  </view>
+    <!-- 推荐 -->
+    <view class="tui">
+        <image src="../../static/images/火.png"></image>
+        <text>推荐商品</text>
+    </view>
+  <view class="jian">
+    <view class="jian-item" wx:for="{{jian}}" wx:key="{{index}}">
+      <image src="{{item.productPicList[0]}}"></image>
+      <text class="zt">{{item.productName}}</text>
+       <text class="pre">￥{{item.price}}</text>
+    </view>
+  </view>
+  <!-- 底线 -->
+  <view class="di">————————我是有底线的———————</view>
 </view>
