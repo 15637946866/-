@@ -5,7 +5,9 @@
     "pages/search/search",
     "pages/cart/cart",
     "pages/my/my",
-    "pages/indetail/indetail"
+    "pages/indetail/indetail",
+    "pages/login/login"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
