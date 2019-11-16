@@ -23,7 +23,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.3",
 	"appid": "wx47211e216fa47d7e",
-	"projectname": "xianhua",
+	"projectname": "miniprogram-1",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -56,18 +56,15 @@
 			"list": [
 				{
 					"id": -1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-					"name": "pages/search/search",
-					"pathName": "pages/search/search",
-=======
+					"name": "pages/cart/cart",
+					"pathName": "pages/cart/cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
->>>>>>> 8366bfc35a0d2b0e35c617da3042e982e445150a
-=======
-					"name": "pages/indetail/indetail",
-					"pathName": "pages/indetail/indetail",
->>>>>>> abf245cafbb209d68e25bf46b7410cff47fd86a7
 					"scene": null
 				}
 			]

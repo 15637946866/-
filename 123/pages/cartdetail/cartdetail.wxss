@@ -1,0 +1,135 @@
+/* pages/detail/detail.wxss */
+.top{
+  display: flex;
+  align-items: center;
+  background: #FF8BB2;
+  padding: 30rpx
+}
+.top image{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%
+}
+.top .tdl{
+  display: flex;
+  flex-direction: column;
+  font-size: 27rpx;
+  margin-left: 20rpx  
+}
+.share{
+  display: flex;
+  background: #98142E;
+  border-radius: 30rpx;
+  padding: 10rpx 30rpx;
+  align-items: center;
+  position: absolute;
+  top: 50rpx;
+  right: 20rpx
+}
+.share>image{
+  display: inline-block;
+  height: 25rpx;
+  width: 25rpx;
+  margin-right: 15rpx
+}
+.share>text{
+  color: white;
+  font-size: 25rpx
+}
+.nav{
+  display: flex;
+  padding: 0rpx 40rpx;
+  border-bottom: 4rpx solid #ccc
+}
+.nav>view{
+  flex: 1;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx
+}
+.selection{
+  color: #991630;
+  border-bottom: 4rpx solid #991630
+}
+.bottom{
+  display: flex;
+  width: 100%;
+  padding: 30rpx 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.bottom .bot-l{
+ border-right: 2rpx solid #ccc
+}
+.bottom>view{
+  flex: 1;
+  display: flex;
+  justify-content: center
+}
+
+.bottom>view image{
+  height: 50rpx;
+  width: 50rpx
+}
+scroll-view{
+  height: 800rpx
+}
+.product{
+  display: flex;
+  flex-wrap: wrap
+}
+.product .con{
+  width: 43%;
+  margin: 10rpx;
+  padding: 15rpx;
+  border: 2rpx solid #ccc
+}
+.bot{
+  margin: 50rpx;
+  width: 100%;
+  text-align: center
+}
+.product .con image{
+ width: 325rpx;
+ height: 325rpx
+}
+.introduce{
+  font-size: 25rpx;
+  display: inline-block;
+  height: 30rpx;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.brief{
+  padding: 30rpx;
+  line-height: 50rpx
+}
+.order>view{
+  border: 2rpx solid #ccc;
+  margin:30rpx;
+  display: flex
+}
+.order>view input{
+  flex: 1;
+  margin-left:20rpx 
+}
+.service{
+  height: 80rpx
+}
+.name1{
+  padding: 10rpx
+}
+button{
+  background: #FF8BB2;
+  width: 750rpx;
+  margin: 0 30rpx;
+  border-radius: 50rpx;
+  color: white
+}

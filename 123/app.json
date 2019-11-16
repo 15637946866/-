@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/catedetail/catedetail",
     "pages/index/index",
     "pages/category/category",
     "pages/search/search",
     "pages/cart/cart",
     "pages/my/my",
     "pages/indetail/indetail",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/cartdetail/cartdetail",
+    "pages/catedetail/catedetail"
 
   ],
   "window": {

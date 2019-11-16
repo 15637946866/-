@@ -1,0 +1,60 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <view class="top">
+    <image src="https://shengyibaobao.oss-cn-shenzhen.aliyuncs.com/img/382/1513916169616.jpg"></image>
+    <view class="tdl">
+      <text>电话：13800138000</text>
+      <text>地址：海珠区</text>
+    </view>
+    <view class="share">
+      <image src="./images/xing.png"></image>
+      <text>收藏</text>
+    </view>
+  </view>
+  <view class="nav">
+    <view class="{{isChan?'selection':''}}" bindtap="nav1">产品信息</view>
+    <view class="{{isGong?'selection':''}}" bindtap="nav2">公司简介</view>
+    <view class="{{isFu?'selection':''}}" bindtap="nav3">预约服务</view>
+  </view>
+  <view class="bottom">
+    <view class="bot-l">
+      <image src="./images/tdl.png"></image>
+      <text>拨打电话</text>
+    </view>
+    <view>
+      <image src="./images/dit.png"></image>
+      <text>进行定位</text>
+    </view>
+  </view>
+  <scroll-view scroll-y="true">
+    <view class="product" wx:if="{{isChan}}">
+      <view wx:for="{{detailList}}" wx:key="{{index}}" class="con">
+        <image src="{{item.productPicList[0]}}"></image>
+        <text class="introduce">{{item.productName}}</text>
+        <text class="price">￥{{item.price}}</text>
+      </view>
+      <view class="bot">----------没有更多产品啦----------</view>
+    </view>
+    <view class="brief" wx:if="{{isGong}}">
+      鲜花盆栽同城属地小程序让您轻松了解到最新的行业资讯，带给您生活便利，欢迎行业精英的您加入
+    </view>
+    <view class="order" wx:if="{{isFu}}">
+      <view class="service">
+        <text>服务类目</text>
+      </view>
+      <view class="name1">
+        <text>姓名</text>
+        <input placeholder="请输入姓名"></input>
+      </view>
+      <view class="name1">
+        <text>电话</text>
+        <input placeholder="请输入电话"></input>
+      </view>
+      <view class="name1">
+        <text>预约日期</text>
+        <input placeholder="请输入预约日期"></input>
+      </view>
+      <button>提交</button>
+    </view>
+  </scroll-view>
+</view>

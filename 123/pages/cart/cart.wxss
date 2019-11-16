@@ -1,1 +1,40 @@
 /* pages/cart/cart.wxss */
+.top{
+  display: flex;
+  align-items: center;
+  margin: 0 15rpx
+}
+.top input{
+  flex: 1;
+  background: #ccc;
+  height: 70rpx;
+  border-radius: 30rpx;
+  padding: 0 30rpx
+}
+.top image{
+  height: 80rpx;
+  width: 80rpx
+}
+.content{
+  position: relative;
+  top: 400rpx;
+  display: flex;
+  align-items: center
+}
+.content-z{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.content-z image{
+  width: 200rpx;
+  height: 150rpx
+}
+.content-z text{
+  width: 200rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center
+}
