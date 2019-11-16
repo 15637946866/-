@@ -1,0 +1,55 @@
+<!--pages/indetail/indetail.wxml-->
+<import src="/wxParse/wxParse.wxml"/>
+<view>
+  <image class="img" src="{{pro.productPicList[0]}}"></image>
+  <view class="txt">{{pro.productName}}
+    <image src="../../static/images/火.png"></image>
+  </view>
+  <text class="tt">￥{{pro.price}}</text>
+  <view class="kc">
+    <text>库存：99</text>
+    <text>销量：0</text>
+    <text>浏览量：73</text>
+  </view>
+  <view class="select" bindtap="showModal">
+    <text>请选择规格和数量</text>
+    <view>></view>
+  </view>
+  <!-- 富文本 -->
+  <view class="desc" >
+  <template is="wxParse" data="{{wxParseData:descData.nodes}}"/>
+  </view>
+   <!-- 购物车 -->
+  <view class="cart">
+    <view class="start">☆</view>
+    <view class="shop" bindtap="tiao">🛒
+      <label>8</label>
+    </view>
+    <view class="now">立即购买</view>
+    <view class="mai" bindtap="join">加入购物车</view>
+  </view>
+    <!-- 蒙层 -->
+  <view class="modal">
+    <view class="m-pro" animation="{{animationData}}">
+      <view class="sp-top">
+        <view class="t-l">
+         <text class="pri">￥{{pro.price}}</text>
+        </view>
+        <view class="t-r" bindtap="closeModal">X</view>
+      </view>
+      <view class="t-c">
+        <text>花语</text>
+        <view>{{pro.attrTypeList[0].attrList[0].valueName}}</view>
+      </view>
+      <view class="sp-bottom">
+        <view>数量</view>
+        <view class="num">
+          <view class="sub" bindtap="sunNum">-</view>
+          <input type="number" bindblur="setVal" value="{{inputNum}}"></input>
+          <view class="add" bindtap="addNum">+</view>
+        </view>
+      </view>
+    </view>
+    <view class="mc" bindtap="closeModal" wx:if="{{isShowModal}}"></view>
+  </view>
+</view>
