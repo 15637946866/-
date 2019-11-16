@@ -1,2 +1,13 @@
 <!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<view class="cart">
+  <view class="top">
+    <input></input>
+    <image src="../../static/images/ic_menu_sort_nor.png"></image>
+  </view>
+  <view class="content">
+    <view class="content-z" wx:for="{{cartList}}" wx:key="{{index}}" bindtap="deta" data-id="{{item.storeId}}">
+      <image src="{{item.storePic}}"></image>
+      <text>{{item.storeName}}</text>
+    </view>
+  </view>
+</view>

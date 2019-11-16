@@ -1,22 +1,31 @@
-// pages/cart/cart.js
-import { getCartList} from "../../api/api3.js"
+// pages/detail/detail.js
+import { getDetailList} from "../../api/api3.js"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    cartList:[]
+    detailList:[],
+    productId:null,
+    isChan:true,
+    isGong:false,
+    isFu:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    getCartList().then((res)=>{
-      console.log(res)
+    console.log(options)
+    this.setData({
+      productId: options.id
+    })
+
+    getDetailList(options.id).then((res)=>{
+      console.log(res.data.data.productList)
       this.setData({
-        cartList: res.data.data.storeList
+        detailList: res.data.data.productList
       })
     })
   },
@@ -69,11 +78,25 @@ Page({
   onShareAppMessage: function () {
 
   },
-  deta(event){
-    console.log(event)
-    var id = event.currentTarget.dataset.id
-    wx.navigateTo({
-      url: '/pages/cartdetail/cartdetail?id='+id,
+  nav1(){
+    this.setData({
+      isChan: true,
+      isGong: false,
+      isFu: false
+    })
+  },
+  nav2() {
+    this.setData({
+      isChan: false,
+      isGong: true,
+      isFu: false
+    })
+  },
+  nav3() {
+    this.setData({
+      isChan: false,
+      isGong: false,
+      isFu: true
     })
   }
 })
