@@ -1,0 +1,32 @@
+.grafather{
+  display: flex;
+  width: 100%;
+  height: 300rpx;
+  flex-wrap: nowrap;
+}
+.father{
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: space-between;
+
+ width: 48%;
+ 
+}
+.father image{
+  margin-left: 100rpx;
+  width: 150rpx;
+  height: 150rpx;
+}
+.father text{
+  
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  
+}
+.borther1{
+  color: red
+}
+

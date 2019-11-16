@@ -1,2 +1,17 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="content">
+  <view class="c-left">
+    <scroll-view scroll-y="true">
+<view class="{{currentIndex===index?'active sv-item' :'sv-item'}}" wx:for="{{cateList}}" bindtap="selectOne" data-index="{{index}}" data-id="{{item.id}}">
+      {{item.itemName}}
+     </view>
+  </scroll-view>
+  </view>
+  <view class="c-right" >
+      <view class="view-item" wx:for="{{cateList}}" bindtap="top" bindtap="gotodetail" data-id="{{item.id}}">
+      <text>{{item.itemName}}</text>
+      <view class="pic">
+      <image src="{{item.categoryIcon}}"></image>
+      </view>
+      </view>
+  </view>
+</view>

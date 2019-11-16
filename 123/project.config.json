@@ -57,8 +57,13 @@
 				{
 					"id": -1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					"name": "pages/search/search",
 					"pathName": "pages/search/search",
+=======
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+>>>>>>> 8366bfc35a0d2b0e35c617da3042e982e445150a
 =======
 					"name": "pages/indetail/indetail",
 					"pathName": "pages/indetail/indetail",

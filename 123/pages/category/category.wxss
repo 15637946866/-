@@ -1,1 +1,58 @@
 /* pages/category/category.wxss */
+.content{
+  height: 1100rpx;
+  display: flex;
+}
+.c-left{
+  width: 150rpx;
+  height: 100%;
+  background:#d1d1d1;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.sv-item{
+  width: 150rpx;
+  height:100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  font-weight:normal;
+  }
+  .gd{
+    height: 1100rpx
+  }
+  .active{
+    color: #FF6990;
+    border-left:4rpx solid #FF6990;
+    background:white;
+    
+  }
+  .c-right{
+    margin-left: 150rpx;
+    width: 100%;
+    padding-left: 15rpx;
+  }
+  .view-item{
+    width: 100%;
+    background: #d1d1d1;
+    height: 400rpx;
+    
+  }
+  .view-item text{
+    background: white;
+    width: 100%;
+    height: 100rpx;
+    display: inline-block;
+    line-height: 100rpx;
+     font-size: 28rpx;
+     font-weight: normal;
+  }
+  .pic image{
+    width: 150rpx;
+    height: 150rpx;
+    margin-left: 15rpx;
+    margin-top: 30rpx;
+    
+  }
+
