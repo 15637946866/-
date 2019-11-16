@@ -1,11 +1,14 @@
 // pages/search/search.js
+import { addSearch } from "../../api/api4.js"
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    cateList: null,
+    cateLists: null,
+    cateListss: null,
+    cateListsss: null
   },
 
   /**
@@ -19,7 +22,18 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    addSearch().then((res) => {
+      console.log(res.data.data)
+      console.log(res.data.data.newsTypeInfo[0].newsList)
+      console.log(res.data.data.newsTypeInfo[1].newsList)
+      console.log(res.data.data.newsTypeInfo[2].newsList)
+      this.setData({
+      cateList: res.data.data,
+      cateLists: res.data.data.newsTypeInfo[0].newsList,
+      cateListss: res.data.data.newsTypeInfo[1].newsList,
+      cateListsss: res.data.data.newsTypeInfo[2].newsList
+      })
+    })
   },
 
   /**

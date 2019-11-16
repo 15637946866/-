@@ -1,2 +1,63 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="zong">
+  <view class="shang">
+    <swiper class="tou">
+      <swiper-item wx:for="{{cateList.newsAdList}}" wx:key='{{index}}'>
+        <image src="{{item.adUrl}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="ahua">
+      <view class="hua" wx:for="{{cateList.newsTypeInfo}}" wx:key="{{index}}">
+        <image class="hua-img" src="{{item.icon}}"></image>
+        <text>{{item
+    .itemName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="zhong">
+    <view class="zhong-t">鲜花常识</view>
+    <view class="azhong-s">
+      <view class="zhong-s" wx:for="{{cateLists}}" wx:key="{{index}}">
+        <view class="tup">
+          <image class="zhong-img" src="{{item.picUrl}}"></image>
+        </view>
+        <text class="zt">{{item.itemTitle}}</text>
+      </view>
+    </view>
+    <view class="zhong-d">
+      <view class="zhong-dx">查看更多</view>
+    </view>
+  </view>
+
+
+  <view class="zhong">
+    <view class="zhong-t">送花艺术</view>
+    <view class="azhong-s">
+      <view class="zhong-s" wx:for="{{cateListss}}" wx:key="{{index}}">
+        <view class="tup">
+          <image class="zhong-img" src="{{item.picUrl}}"></image>
+        </view>
+        <text class="zt">{{item.itemTitle}}</text>
+      </view>
+    </view>
+    <view class="zhong-d">
+      <view class="zhong-dx">查看更多</view>
+    </view>
+  </view>
+
+
+  <view class="xia">
+    <view class="xia-t">生日送花</view>
+    <view class="axia-s">
+      <view class="xia-s" wx:for="{{cateListsss}}" wx:key="{{index}}">
+        <view class="tupx">
+          <image class="xia-img" src="{{item.picUrl}}"></image>
+        </view>
+        <text class="ztx">{{item.itemTitle}}</text>
+      </view>
+    </view>
+    <view class="xia-d">
+      <view class="xia-dx">查看更多</view>
+    </view>
+  </view>
+</view>

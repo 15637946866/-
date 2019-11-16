@@ -1,11 +1,11 @@
-var baseUrl = "https://www.stbz99.com/apps123/homePage/getHomePageInfo"
-export function add() {
+var baseUr4 = "https://www.stbz99.com/apps123/news/getNewsIndexInfo"
+export function addSearch() {
   return new Promise((resolve, reject) => {
     wx.request({
-      url: baseUrl,
+      url: baseUr4,
       method: 'POST',
       data: {
-        projectId: 968
+        moduleId: 6598
       },
       success: function (res) {
         resolve(res)
