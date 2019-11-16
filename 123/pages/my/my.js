@@ -19,14 +19,23 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    userInfo: null
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+      var isLogin = wx.getStorageSync("isLogin")
+      if(!isLogin){
+        wx.navigateTo({
+          url:'/pages/login/login',
+        })
+      }else{
+        this.setData({
+          userInfo: wx.getStorageSync("userInfo")
+        })
+      }
   },
 
   /**
